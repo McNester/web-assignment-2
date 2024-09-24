@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Discover why Neovim is the best code editor for developers"
+        />
+        <title>Neovim: The Ultimate Code Editor</title>
+
+        <!-- Bootstrap core CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Bootstrap icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+        />
+
+        <style>
+            .feature-icon {
+                font-size: 2.5rem;
+                color: #0d6efd;
+            }
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+            .bg-neovim {
+                background-color: #57a143;
+            }
+            .text-neovim {
+                color: #57a143;
+            }
+            .btn-neovim {
+                background-color: #57a143;
+                color: white;
+            }
+            .btn-neovim:hover {
+                background-color: #4a8a39;
+                color: white;
+            }
+            .testimonial-card {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .testimonial-content {
+                flex-grow: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Snippet 1: Navbar from 'headers' example -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-neovim mb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Neovim</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="#home"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials"
+                                >Testimonials</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#get-started"
+                                >Get Started</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <!-- Snippet 2: Hero section from 'heroes' example -->
+            <div class="px-4 py-5 my-5 text-center" id="home">
+                <h1 class="display-5 fw-bold text-neovim">
+                    Neovim: The Ultimate Code Editor
+                </h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">
+                        Experience the power of modal editing, extensibility,
+                        and lightning-fast performance. Discover why developers
+                        worldwide choose Neovim as their go-to code editor.
+                    </p>
+                    <div
+                        class="d-grid gap-2 d-sm-flex justify-content-sm-center"
+                    >
+                        <a
+                            href="#features"
+                            class="btn btn-neovim btn-lg px-4 gap-3"
+                            >Explore Features</a
+                        >
+                        <a
+                            href="#get-started"
+                            class="btn btn-outline-secondary btn-lg px-4"
+                            >Get Started</a
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snippet 3: Features section from 'features' example -->
+            <div class="container px-4 py-5" id="features">
+                <h2 class="pb-2 border-bottom">Why Neovim Stands Out</h2>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                    <div class="col d-flex align-items-start">
+                        <div class="feature-icon flex-shrink-0 me-3">
+                            <i class="bi bi-lightning-charge"></i>
+                        </div>
+                        <div>
+                            <h2>Lightning Fast</h2>
+                            <p>
+                                Neovim's asynchronous architecture ensures
+                                unparalleled speed and responsiveness, even with
+                                large files and complex plugins.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div class="feature-icon flex-shrink-0 me-3">
+                            <i class="bi bi-plugin"></i>
+                        </div>
+                        <div>
+                            <h2>Highly Extensible</h2>
+                            <p>
+                                With a rich ecosystem of plugins and a powerful
+                                API, Neovim adapts to your unique workflow and
+                                preferences.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div class="feature-icon flex-shrink-0 me-3">
+                            <i class="bi bi-keyboard"></i>
+                        </div>
+                        <div>
+                            <h2>Modal Editing</h2>
+                            <p>
+                                Efficient keyboard-centric editing that boosts
+                                your productivity and reduces hand strain,
+                                allowing you to edit at the speed of thought.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom section: Key Advantages -->
+            <div class="container px-4 py-5 bg-light">
+                <h2 class="pb-2 border-bottom">Key Advantages of Neovim</h2>
+                <div class="row g-4 py-5">
+                    <div class="col-md-6">
+                        <h3>
+                            <i class="bi bi-cpu text-neovim"></i> Powerful
+                            Performance
+                        </h3>
+                        <p>
+                            Neovim's core is written in C, ensuring blazing-fast
+                            startup times and efficient memory usage, even when
+                            handling large files or complex operations.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>
+                            <i class="bi bi-code-square text-neovim"></i> Lua
+                            Integration
+                        </h3>
+                        <p>
+                            Neovim's built-in Lua support allows for more
+                            expressive and faster configuration and plugin
+                            development compared to traditional VimScript.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>
+                            <i class="bi bi-diagram-3 text-neovim"></i> Modern
+                            Architecture
+                        </h3>
+                        <p>
+                            With its client-server architecture, Neovim enables
+                            better integration with external tools and GUIs,
+                            expanding its capabilities beyond traditional
+                            terminal-based editing.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>
+                            <i class="bi bi-people text-neovim"></i> Active
+                            Community
+                        </h3>
+                        <p>
+                            Benefit from a vibrant, passionate community that
+                            continuously contributes to Neovim's development,
+                            creating plugins, sharing configurations, and
+                            providing support.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snippet 4: Testimonials section adapted from 'carousel' example -->
+
+            <div class="container my-5" id="testimonials">
+                <h2 class="pb-2 border-bottom">What Developers Say</h2>
+                <div class="row g-4 py-5">
+                    <div class="col-md-4">
+                        <div class="card testimonial-card">
+                            <div class="card-body">
+                                <div class="testimonial-content">
+                                    <h3 class="card-title">
+                                        "Neovim revolutionized my coding
+                                        workflow"
+                                    </h3>
+                                    <p class="card-text">
+                                        "The speed and customizability of Neovim
+                                        have significantly improved my
+                                        productivity. It's the best editor I've
+                                        ever used."
+                                    </p>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted"
+                                        >- Sarah Johnson, Senior Software
+                                        Engineer</small
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card testimonial-card">
+                            <div class="card-body">
+                                <div class="testimonial-content">
+                                    <h3 class="card-title">
+                                        "From skeptic to advocate"
+                                    </h3>
+                                    <p class="card-text">
+                                        "I was hesitant to switch from my old
+                                        editor, but Neovim's features and
+                                        performance won me over. I can't imagine
+                                        coding without it now."
+                                    </p>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted"
+                                        >- Michael Chen, Full Stack
+                                        Developer</small
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card testimonial-card">
+                            <div class="card-body">
+                                <div class="testimonial-content">
+                                    <h3 class="card-title">
+                                        "The perfect balance of power and
+                                        simplicity"
+                                    </h3>
+                                    <p class="card-text">
+                                        "Neovim offers advanced features without
+                                        sacrificing speed or simplicity. It's
+                                        become an indispensable tool in my
+                                        development arsenal."
+                                    </p>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted"
+                                        >- Emily Rodriguez, DevOps
+                                        Engineer</small
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snippet 5: Get Started section adapted from 'features' example -->
+            <div class="container px-4 py-5" id="get-started">
+                <h2 class="pb-2 border-bottom">Get Started with Neovim</h2>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                    <div class="col d-flex align-items-start">
+                        <div class="feature-icon flex-shrink-0 me-3">
+                            <i class="bi bi-download"></i>
+                        </div>
+                        <div>
+                            <h2>1. Install Neovim</h2>
+                            <p>
+                                Download and install Neovim for your operating
+                                system. It's available for Windows, macOS, and
+                                Linux.
+                            </p>
+                            <a
+                                href="https://github.com/neovim/neovim/releases"
+                                class="btn btn-neovim"
+                            >
+                                Download Neovim
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div class="feature-icon flex-shrink-0 me-3">
+                            <i class="bi bi-book"></i>
+                        </div>
+                        <div>
+                            <h2>2. Learn the Basics</h2>
+                            <p>
+                                Familiarize yourself with Vim/Neovim commands
+                                and modal editing. Our documentation and
+                                tutorials will guide you.
+                            </p>
+                            <a
+                                href="https://neovim.io/doc/user/"
+                                class="btn btn-neovim"
+                            >
+                                Read Documentation
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div class="feature-icon flex-shrink-0 me-3">
+                            <i class="bi bi-gear"></i>
+                        </div>
+                        <div>
+                            <h2>3. Customize Your Setup</h2>
+                            <p>
+                                Tailor Neovim to your needs with plugins and
+                                custom configurations. The possibilities are
+                                endless!
+                            </p>
+                            <a
+                                href="https://github.com/rockerBOO/awesome-neovim"
+                                class="btn btn-neovim"
+                            >
+                                Explore Plugins
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom section: Code Comparison -->
+            <div class="container px-4 py-5 bg-light">
+                <h2 class="pb-2 border-bottom">Neovim in Action</h2>
+                <div class="row g-4 py-5">
+                    <div class="col-md-6">
+                        <h3>Efficient Text Manipulation</h3>
+                        <pre class="bg-dark text-light p-3 rounded"><code>
+# Before (3 lines)
+first_name = "John"
+last_name = "Doe"
+full_name = first_name + " " + last_name
+
+# After (1 line)
+full_name = f"{first_name} {last_name}"
+            </code></pre>
+                        <p>
+                            With Neovim's powerful commands, you can perform
+                            complex text manipulations quickly and efficiently.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Quick Navigation</h3>
+                        <pre class="bg-dark text-light p-3 rounded"><code>
+# Navigate to function definition
+gd
+
+# Find all references
+gr
+
+# Quick fix
+&lt;space&gt;qf
+
+# Fuzzy find files
+&lt;ctrl&gt;p
+            </code></pre>
+                        <p>
+                            Neovim's modal editing and extensibility allow for
+                            lightning-fast navigation and code manipulation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-dark text-white text-center py-3">
+            <p>&copy; 2024 Neovim Enthusiasts. All rights reserved.</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
